@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  border-radius: 50%;
+}
+h1,h2,h3,h4,h5,h6,p{
+          margin-top: 2px;
+          margin-bottom: 2px;
+          margin-left: 16px;
+        }
+</style>
+<link rel="stylesheet" href="resumeMVC.css">
+</head>
+<body>
+
+
+  <div class="flex-container">
+
+    <div style="width: 24%; padding-right: 5px;">
+       <!-- updating resume details -->
+  <div style="margin-top: 80px;">
+
+    <div>
+      <select name="select" id="selectId" class="selectFields">
+        <option value="select option">select option</option>
+        <option value="Name">Name</option>
+        <option value="Education">Education</option>
+        <option value="Work Experience">Work Experience</option>
+        <option value="Skills">Skills</option>
+        <option value="Personal Projects">Personal Projects</option>
+        <option value="Languages">Languages</option>
+    </select>
+  </div>
+
+  <div id="inputFields">
+  </div>
+
+  <div>
+    <input type="submit" value="Submit" id="submitButton" class="button">  
+    <input type="submit" value="Reset" id="resetButton" class="button"> 
+    <input type="submit" value="Cancel" id="cancelButton" class="button">
+    <input type="submit" value="Add" id="addButton" class="button">
+  </div> 
+    </div>
+  </div>
+
+    <div style="width: 76%; padding-right: 5px;">
+
+      <div class="flex-container">
+
+        <div style="width: 40%; padding-right: 5px;">
+          <div id="personalDetails"></div>
+        </div>
+
+        <div style="width: 30%; padding-right: 5px;">
+          <img src="profile.jpeg" style="width: 130px;height: 130px;">
+        </div>
+
+        <div style="width: 30%; padding-right: 5px;">
+          <div style="text-align: right">
+            <a href="mailto:praveenchandel87695@gmail.com" target="_blank" id="profileImage">praveenchandel87695@gmail.com</a>
+            <p id="contactNumber">8769564547</p>
+            <p id="address">baran, India</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex-container">
+
+        <div style="width: 50%; padding-right: 5px;">
+
+          <div id="education">
+            <h3 class="heading"> <u>EDUCATION</u></h3>
+          </div>
+          <div id="workExperience">
+            <h3 style="color:rgb(96,188,170); margin-top: 25px;"> <u>WORK EXPERIENCE</u></h3>
+          </div> 
+        </div>
+
+        <div style="width: 50%; padding-left: 5px;">
+
+            <div id="skills" style="margin-left: 16px; margin-right: 16px;">
+              <h3 style="color:rgb(96,188,170);margin-top: 25px;"> <u>SKILLS</u></h3>
+            </div>
+            <div id="personalProjects">
+              <h3 style="color:rgb(96,188,170); margin-top: 25px;" id="personalProjects"> <u>PERSONAL PROJECTS</u></h3>
+            </div>
+            <div id="languages">
+              <h3 style="color:rgb(96,188,170); margin-top: 25px;"> <u>LANGUAGES</u></h3>
+            </div>
+            <div id="interests">
+              <h3 style="color:rgb(96,188,170); margin-top: 25px;"> <u>INTERESTS</u></h3>
+            </div>       
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+<script src="resumeMVC.js"></script>
+</body>
+</html>
